@@ -20,7 +20,7 @@ const Summary = () => {
       <div className="col">
         <div className="p-3">
           <h1 className="text-center fs-1 mb-0">
-            이력서 <strong>{me.name}</strong>
+            프로필 <strong>{me.name}</strong>
           </h1>
           <p className="text-center mb-1">
             <a href={`mailto:${me.email}`}>{me.email}</a>

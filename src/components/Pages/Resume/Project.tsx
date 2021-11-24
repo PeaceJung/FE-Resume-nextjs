@@ -1,5 +1,6 @@
 const projects = [
   {
+    key: "westudio",
     term: "2020.03 ~ ",
     people: "개발 2~3명",
     company: "더존비즈온",
@@ -26,6 +27,7 @@ const projects = [
   },
   {
     term: "2019.09 ~ 2020.06",
+    key: "eapproval",
     people: "개발 1명",
     company: "더존비즈온",
     projectName: "WEHAGO 전자결재 모바일",
@@ -42,6 +44,7 @@ const projects = [
   },
   {
     term: ["2019.03 ~ 2020.07", <br />, "(2019.06월 정식 서비스)"],
+    key: "meet",
     people: "개발 2명",
     company: "더존비즈온",
     projectName: "WEHAGO Meet (화상회의 모바일)",
@@ -62,6 +65,7 @@ const projects = [
   },
   {
     term: "2019.01 ~ 2019.07",
+    key: "uicomponent",
     company: "더존비즈온",
     projectName: "WEHAGO 공통 UI 컴포넌트",
     stacks: ["React", "Javascript"],
@@ -83,7 +87,7 @@ const Project = () => {
           <h2 className="text-uppercase">프로젝트</h2>
 
           {projects.map((project) => (
-            <div className="row pb-3 mb-3 border-bottom">
+            <div key={project.key} className="row pb-3 mb-3 border-bottom">
               <div className="col-3 fw-bold">
                 <div>
                   <span>{project.term}</span>

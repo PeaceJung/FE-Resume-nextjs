@@ -25,7 +25,7 @@ const stacks = [
   },
   {
     stack: "Node.js",
-    description: `빠르게 API 서버 구축을 위해 Node.js와 Graphql을 사용하여 서버를 개발한 경험이 있습니다.
+    description: `빠르게 API 서버 구축을 위해 Node.js와 Graphql을 사용하여 서버를 개발한 경험이 있습니다.
       Node.js와 Graphql의 동작방식을 이해 확장시켜 Frontend 개발역량을 강화하였습니다.`,
     level: "⭐️⭐️⭐️⭐️",
   },
@@ -47,7 +47,7 @@ const Stack = () => {
             </thead>
             <tbody>
               {stacks.map((s) => (
-                <tr>
+                <tr key={s.stack}>
                   <th scope="row">{s.stack}</th>
                   <td>{s.description}</td>
                   <td>{s.level}</td>

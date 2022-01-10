@@ -17,7 +17,6 @@ class MyDocument extends Document {
       <Html lang="ko">
         <Head>
           <meta charSet="utf-8" />
-          {/* <link rel="icon" type="image/png" sizes="96x96" href="https://static.wehago.com/imgs/common/favicons/favicon-96x96.png" /> */}
           <meta name="theme-color" content="#000000" />
           <meta
             httpEquiv="Cache-Control"
@@ -25,6 +24,9 @@ class MyDocument extends Document {
           />
           <meta httpEquiv="Pragma" content="no-cache" />
           <meta httpEquiv="Expires" content="-1" />
+          <meta property="og:title" content="프론트엔드 개발_이력서" />
+          <meta property="og:description" content="프론트엔드 개발자입니다." />
+          <meta property="og:image" content="/images/react.png" />
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
             rel="stylesheet"

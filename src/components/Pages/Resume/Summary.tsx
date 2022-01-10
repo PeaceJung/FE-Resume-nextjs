@@ -2,7 +2,7 @@ const me = {
   name: "정화평",
   email: "hopuo132@gmail.com",
   text: [
-    "React와 TypeScript를 사용하는 3년차 Frontend 개발자 입니다.",
+    "React와 TypeScript를 사용하는 4년차 Frontend 개발자 입니다.",
     <br />,
     "React 서비스 개발, React Native 앱개발, React UI 컴포넌트 개발 경험이 있습니다.",
     <br />,

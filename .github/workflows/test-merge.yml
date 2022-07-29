@@ -1,5 +1,7 @@
 name: 'test-merge'
 
+on: pull_request_target
+
 jobs:
   check-compare-branch:
     runs-on: ubuntu-latest

@@ -1,13 +1,11 @@
 name: 'test-merge'
-on:
-  pull_request_target:
-      branches: [ main ]
 
 jobs:
   check-compare-branch:
     runs-on: ubuntu-latest
     steps:
       - name: Check compare branch
+        if: github.event_name == 'pull_request_target'
         run: |
           echo "GITHUB_HEAD_REF = $GITHUB_HEAD_REF"
           echo "GITHUB_BASE_REF = $GITHUB_BASE_REF"

@@ -10,7 +10,6 @@ jobs:
       - name: Check compare branch
         if: github.event_name == 'pull_request'
         run: |
-          if []
           echo "GITHUB_HEAD_REF = $GITHUB_HEAD_REF"
           echo "GITHUB_BASE_REF = $GITHUB_BASE_REF"
           echo "GITHUB_REF_NAME = $GITHUB_REF_NAME"

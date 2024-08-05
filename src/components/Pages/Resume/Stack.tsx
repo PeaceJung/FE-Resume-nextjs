@@ -1,3 +1,5 @@
+import styles from "../../../../public/css/Common.module.css";
+
 const stacks = [
   {
     stack: "React",
@@ -42,7 +44,9 @@ const Stack = () => {
     <div className="row gx-5 stack">
       <div className="col">
         <div className="p-3">
-          <h2 className="text-uppercase">기술 스택</h2>
+          <h2 className="text-uppercase">
+            <span className={styles["h2-title"]}>기술 스택</span>
+          </h2>
           <table className="table">
             <thead className="table-light">
               <tr>

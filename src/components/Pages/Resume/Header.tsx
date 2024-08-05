@@ -18,11 +18,11 @@ const Stacks = () => {
 const ProfileImage = () => (
   <div>
     <img
-      src={"images/profile_md.jpeg"}
-      className="rounded-circle mx-auto"
+      src={"images/profile.jpg"}
+      className="rounded mx-auto"
       alt="profile image"
-      width="100"
-      height="100"
+      width="100px"
+      height="auto"
     />
   </div>
 );

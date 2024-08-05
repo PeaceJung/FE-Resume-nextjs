@@ -16,7 +16,7 @@ const Resume = () => {
         <Summary />
         <Career />
         <Project />
-        <Stack />
+        {/* <Stack /> */}
         <Military />
         <Education />
       </div>

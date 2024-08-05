@@ -1,0 +1,15 @@
+.h2-title {
+  position: relative;
+}
+
+.h2-title:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  bottom: 0;
+  background-color: #a0daa9;
+  opacity: 0.5;
+  left: 0;
+}

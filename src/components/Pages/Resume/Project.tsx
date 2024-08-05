@@ -4,12 +4,12 @@ import styles from "../../../../public/css/Common.module.css";
 
 type Project = {
   key: string;
-  term: ReactNode | ReactNode[];
-  people: string;
+  term: ReactNode;
+  people?: string;
   company: string;
   projectName: string;
   stacks: string[];
-  detail: string[];
+  detail: ReactNode;
   image?: string;
 };
 

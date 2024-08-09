@@ -11,8 +11,8 @@ import styles from "../../../../public/css/Resume.module.css";
 const Resume = () => {
   return (
     <div className={styles["resume-container"]}>
-      <div className="container p-3">
-        <Header />
+      <div className="container pt-5 pb-5">
+        {/* <Header /> */}
         <Summary />
         <Career />
         <Project />

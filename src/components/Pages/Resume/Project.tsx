@@ -318,25 +318,43 @@ const projects_redmobile: Project[] = [
     projectName: "웹기반 게임 운영툴 개발",
     stacks: ["React", "Javascript", "Bootstrap", "Node.js"],
     detail: [
-      <b>Frontend</b>,
+      <b>Frontend 개발</b>,
       <br />,
-      "⦁ 운영자가 캐릭터를 조회하고 커스터마이징 할 수 있는 웹기반 툴 개발",
+      "1. 캐릭터 커스터마이징 툴",
       <br />,
-      "⦁ 서버 상태를 모니터링 할 수 있는 웹 대시보드 개발",
+      <span className={styles["span-t4"]}>
+        운영자가 캐릭터를 조회하고 커스터마이징할 수 있는 웹 기반 도구를 개발.
+      </span>,
       <br />,
-      "  ◦ 모니터링용 서버와 소켓으로 실시간 정보를 받아와 UI로 표현",
+      "2. 서버 모니터링 대시보드",
+      <br />,
+      <span className={styles["span-t4"]}>
+        서버 상태를 실시간으로 모니터링할 수 있는 웹 대시보드를 개발, 모니터링용
+        서버로부터 소켓을 통해 실시간 데이터를 받아 UI에 시각적으로 표현.
+      </span>,
       <br />,
       <br />,
-      <b>Backend</b>,
+      <b>Backend 개발</b>,
       <br />,
-      "⦁ Node.js를 사용하여 Frontend에 필요한 데이터를 게임서버로부터 받아와서 가공하는 중간서버를 개발",
+      "1. 중간 서버 개발",
       <br />,
-      "⦁ Frontend를 위한 API 개발",
+      <span className={styles["span-t4"]}>
+        Node.js를 사용하여 게임 서버에서 데이터를 받아와 가공한 후, 프론트엔드에
+        필요한 형태로 제공하는 중간 서버를 개발.
+      </span>,
       <br />,
-      "⦁ Frontend <-> Node.js(중간서버) <-> 게임서버",
+      "2. API 개발",
       <br />,
-      "⦁ 각 서비스는 소켓으로 연결하여 통신함",
+      <span className={styles["span-t4"]}>
+        프론트엔드와의 통신을 위한 API를 개발, 프론트엔드에서 중간 서버를 통해
+        게임 서버와 데이터를 주고받도록 구현.
+      </span>,
       <br />,
+      "3. 소켓 통신",
+      <br />,
+      <span className={styles["span-t4"]}>
+        각 서비스는 소켓을 통해 실시간으로 연결하여 통신을 원활하게 처리.
+      </span>,
     ],
   },
 ];

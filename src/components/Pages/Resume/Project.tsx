@@ -19,7 +19,7 @@ const projects_nhn: Project[] = [
     term: "2022.03 ~ ",
     people: "개발 5~7명",
     company: "NHN 커머스",
-    projectName: "샵바이 어드민 통합",
+    projectName: "쇼핑몰 어드민 통합 프로젝트 (Lead Developer)",
     stacks: [
       "React",
       "Typescript",
@@ -29,23 +29,41 @@ const projects_nhn: Project[] = [
       "Story Book",
     ],
     detail: [
-      "분산된 여러 개의 쇼핑몰 어드민을 통합하는 업무를 진행하고 있음",
+      <b>업무 내용</b>,
       <br />,
-      "프로젝트 초기 세팅부터 현재까지 리드하고 있음",
+      "⦁ 분산된 여러 쇼핑몰 어드민 시스템을 통합하는 프로젝트를 리드하여, 프로젝트 초기 세팅부터 현재까지 전반적인 개발을 주도.",
       <br />,
-      "대규모의 서비스를 통합/전환하기 위하여 화면 별로 개발 후 부분적으로 배포/적용할 수 있도록 함",
+      "⦁ 대규모 서비스의 원활한 전환을 위해 화면 별로 개발을 진행하고, 기존 서비스 중단 없이 새로운 기능을 부분적으로 배포 및 적용할 수 있도록 구현.",
       <br />,
       <br />,
-      <b>주요성과</b>,
+      <b>주요 성과</b>,
       <br />,
-      "- 분산된 어드민 코드 통합 (멀티레포 -> 모노레포 with Nx)",
+      "1. 코드 통합",
       <br />,
-      "- 기존 서비스 중단없이 새로운 기능 개발 및 배포 (Module Federation)",
+      <span className={styles["span-t4"]}>
+        멀티레포에서 모노레포로 전환(Nx 활용)하여, 코드 관리의 효율성을 크게
+        향상.
+      </span>,
       <br />,
-      "- 기술 스펙 통일",
+      "2. 무중단 배포",
       <br />,
-      "- 디자인 시스템 도입 (Story Book)",
+      <span className={styles["span-t4"]}>
+        Webpack Module Federation을 활용하여, 기존 서비스 중단 없이 새로운
+        기능을 개발 및 배포.
+      </span>,
       <br />,
+      "3. 기술 스펙 통일",
+      <br />,
+      <span className={styles["span-t4"]}>
+        분산된 서비스의 기술 스펙을 통일하여, 유지보수성과 협업 효율성을 높임.
+      </span>,
+      <br />,
+      "4. 디자인 시스템 도입",
+      <br />,
+      <span className={styles["span-t4"]}>
+        Storybook을 통해 UI 컴포넌트 디자인 시스템을 도입, 일관된 UI/UX 제공 및
+        재사용성 극대화.
+      </span>,
     ],
   },
   {
@@ -56,9 +74,11 @@ const projects_nhn: Project[] = [
     projectName: "샵바이 어드민",
     stacks: ["Vue2", "Typescript"],
     detail: [
-      "쇼핑몰을 관리할 수 있는 어드민 개발 및 유지보수",
+      <b>업무 내용</b>,
       <br />,
-      "서비스 플랜 별로 어드민이 있어서 기능 구현 및 유지보수를 위해 각 프로젝트 별로 중복된 작업을 필요로 함",
+      "⦁ 쇼핑몰을 관리할 수 있는 어드민 개발 및 유지보수",
+      <br />,
+      "⦁ 서비스 플랜 별로 어드민이 존재하여 기능 구현 및 유지보수를 위해 각 프로젝트 별로 중복된 작업을 필요로 함",
     ],
   },
 ];
@@ -69,31 +89,46 @@ const projects_douzone: Project[] = [
     term: "2020.03 ~ 2022.02",
     people: "개발 2~3명",
     company: "더존비즈온",
-    projectName: "WEHAGO WE Studio",
+    projectName: "WE Studio : 라이브 스트리밍 서비스 개발",
     stacks: ["React", "Typescript", "Next.js", "Node.js", "Graphql", "AWS"],
     detail: [
-      "WE Studio는 LIVE 스트리밍 서비스",
+      <b>업무 내용</b>,
       <br />,
-      "개별 영상업로드 및 실시간 라이브 스트리밍 기능 개발",
-      <br />,
-      <br />,
-      <b>개발 상세</b>,
-      <br />,
-      "- AWS Elemental MediaLive를 이용하여 파이프라인 시스템을 만들었고, RTMP를 사용하여 영상송출",
-      // <br />,
-      // "시청자들에게는 HLS 프로토콜을 이용하여 서비스 하고 있습니다.",
-      <br />,
-      "- AWS MediaConvert를 사용하여 업로드된 영상을 다양한 화질옵션로 제공하도록 개발",
-      <br />,
-      "- Graphql Subscription을 이용하여 실시간 채팅 기능을 개발",
+      "⦁ WE Studio는 개별 영상 업로드 및 실시간 라이브 스트리밍 기능을 제공하는 서비스로, 실시간 소통과 고품질 영상 제공을 목표로 개발.",
       <br />,
       <br />,
-      <b>회고</b>,
+      <b>주요 개발 내용</b>,
       <br />,
-      "- 프론트엔드 개발자이기 때문에 모든 기능을 구현하기 어려워 AWS 서비스를 적극 활용",
+      "1. 라이브 스트리밍",
       <br />,
-      "- 기술에 대한 경험은 자산이 되기 때문에 다양한 시도를 해볼 수 있는 계기가 되었음",
+      <span className={styles["span-t4"]}>
+        AWS Elemental MediaLive를 활용해 파이프라인 시스템을 구축, RTMP를
+        사용하여 영상 송출 기능을 구현.
+      </span>,
       <br />,
+      "2. 영상 처리",
+      <br />,
+      <span className={styles["span-t4"]}>
+        AWS MediaConvert를 사용해 업로드된 영상을 다양한 화질 옵션으로 변환 및
+        제공, 사용자에게 최적의 시청 경험을 제공.
+      </span>,
+      <br />,
+      "3. 실시간 채팅",
+      <br />,
+      <span className={styles["span-t4"]}>
+        GraphQL Subscription을 이용해 실시간 채팅 기능을 개발, 사용자 간 실시간
+        소통 가능.
+      </span>,
+      <br />,
+      <br />,
+      <b>회고 및 성찰</b>,
+      <br />,
+      "⦁ 프론트엔드 개발자로서 모든 기능을 직접 구현하기 어려운 부분을 AWS 서비스를 적극 활용하여 해결하였고, 클라우드 기반 솔루션의 장점을 경험할 수 있었음.",
+      <br />,
+      "⦁ 새로운 기술을 시도하고 경험하면서, 이를 자산으로 삼아 다양한 도전에 대한 자신감을 얻음.",
+      <br />,
+      <br />,
+      <b>출시 및 배포</b>,
       <br />,
       <span>
         Link :{" "}
@@ -113,22 +148,41 @@ const projects_douzone: Project[] = [
     key: "eapproval",
     people: "개발 1명",
     company: "더존비즈온",
-    projectName: "WEHAGO 전자결재 모바일",
+    projectName: "WEHAGO 전자결재 모바일 앱 개발",
     stacks: ["React Native", "Expo", "Typescript", "Redux", "iOS", "Android"],
     detail: [
-      "WEHAGO 전자결재 웹 서비스와 실시간 연동하여 언제 어디서든 전자결재 업무를 지원하는 앱 서비스",
+      <b>업무 내용</b>,
       <br />,
-      "대시보드를 통해 처리가 필요한 결재정보를 한눈에 확인하고 빠르게 처리",
+      "⦁ WEHAGO 전자결재 웹 서비스와 실시간 연동하여, 언제 어디서나 전자결재 업무를 처리할 수 있는 모바일 앱을 개발.",
+      <br />,
+      "⦁ 대시보드를 통해 처리해야 할 결재 정보를 한눈에 확인하고 신속하게 처리할 수 있는 기능 제공.",
       <br />,
       <br />,
-      <b>개발 상세</b>,
+      <b>주요 개발 내용</b>,
       <br />,
-      "- Expo를 사용하여 기본 세팅",
+      "1. 앱 초기 세팅",
       <br />,
-      "- API로 데이터를 불러오고 Redux(LocalStorage)로 데이터 관리",
+      <span className={styles["span-t4"]}>
+        Expo를 사용하여 프로젝트를 신속하게 세팅하고, React Native 기반의 앱을
+        구축.
+      </span>,
       <br />,
-      "- Expo Notification을 통해 알림을 받도록 개발",
+      "2. 데이터 관리",
       <br />,
+      <span className={styles["span-t4"]}>
+        API를 통해 서버로부터 데이터를 불러오고, Redux(LocalStorage)를 활용하여
+        데이터 상태를 관리.
+      </span>,
+      <br />,
+      "3. 실시간 알림",
+      <br />,
+      <span className={styles["span-t4"]}>
+        Expo Notification을 이용해 결재 요청 및 업데이트에 대한 실시간 알림 기능
+        구현.
+      </span>,
+      <br />,
+      <br />,
+      <b>출시 및 배포</b>,
       <br />,
       <span>
         Link :{" "}
@@ -157,26 +211,56 @@ const projects_douzone: Project[] = [
     key: "meet",
     people: "개발 2명",
     company: "더존비즈온",
-    projectName: "WEHAGO Meet (화상회의 모바일)",
+    projectName: "WEHAGO Meet : 온라인 화상회의 앱 개발",
     stacks: ["React Native", "Javascript", "Redux", "iOS", "Android"],
     detail: [
-      "WEHAGO Meet는 온라인 화상회의 앱 서비스",
+      <b>업무 내용</b>,
+      <br />,
+      <span className={styles["span-t4"]}>
+        ⦁ WEHAGO Meet는 온라인 화상회의를 위한 앱 서비스로, 여러 사용자와 동시에
+        화상회의를 진행할 수 있는 기능을 제공하며, 문서 공유와 PIP(그림 속 그림)
+        모드를 지원.
+      </span>,
       <br />,
       <br />,
-      <b>개발 상세</b>,
+      <b>주요 개발 내용</b>,
       <br />,
-      "- Jitsi 라이브러리를 사용하여 Web-RTC 화상회의를 개발",
+      "1. 화상회의 구현",
       <br />,
-      "- Jitsi App은 오픈소스로 공개되어 있고, 커스터마이징 하여 개발",
+      <span className={styles["span-t4"]}>
+        Jitsi 라이브러리를 사용하여 WebRTC 기반의 화상회의 기능을 개발.
+      </span>,
       <br />,
-      "- 통신에 관한 부분은 Jitsi에서 담당하고 있고, 대화방 리스트를 불러오고 화상회의 화면과 전반적인 UI 개발을 담당",
+      <span className={styles["span-t4"]}>
+        오픈소스 Jitsi 앱을 커스터마이징하여 서비스에 최적화.
+      </span>,
       <br />,
-      "- 여러 사용자와 동시에 회상회의를 진행하는 화면을 개발하였고, 문서공유 기능을 더하여 회의를 진행할 수 있도록 개발",
+      "2. UI 및 기능 개발",
       <br />,
-      "- 백그라운드에서는 PIP모드 지원",
+      <span className={styles["span-t4"]}>
+        대화방 리스트를 불러오고, 화상회의 화면과 전반적인 UI를 개발.
+      </span>,
       <br />,
-      "- 사용자 데이터를 유지하고 화면간 데이터를 공유해야하는 부분은 Redux를 사용하여 데이터를 관리",
+      <span className={styles["span-t4"]}>
+        동시에 여러 사용자가 참여하는 회의 화면을 구성하고, 문서 공유 기능을
+        추가하여 회의 중에 실시간 협업이 가능하도록 구현.
+      </span>,
       <br />,
+      "3. PIP 모드 지원",
+      <br />,
+      <span className={styles["span-t4"]}>
+        백그라운드에서도 회의를 계속 진행할 수 있도록 PIP 모드를 지원.
+      </span>,
+      <br />,
+      "4. 데이터 관리",
+      <br />,
+      <span className={styles["span-t4"]}>
+        사용자 데이터 유지와 화면 간 데이터 공유는 Redux를 사용하여 효과적으로
+        관리.
+      </span>,
+      <br />,
+      <br />,
+      <b>출시 및 배포</b>,
       <br />,
       <span>
         Link :{" "}
@@ -206,11 +290,21 @@ const projects_douzone: Project[] = [
     projectName: "WEHAGO 공통 UI 컴포넌트",
     stacks: ["React", "Javascript"],
     detail: [
-      "비즈니스 플랫폼 위하고(WEHAGO) 서비스 개발을 위한 공통 컴포넌트 개발에 참여",
+      <b>업무 내용</b>,
       <br />,
-      "손쉽게 재사용 가능한 UI 컴포넌트를 제공",
+      <span className={styles["span-t4"]}>
+        ⦁ 비즈니스 플랫폼 위하고(WEHAGO) 서비스 개발을 위한 공통 컴포넌트 개발에
+        참여.
+      </span>,
       <br />,
-      "신규 컴포넌트 개발과 여러 프로젝트에서 유기적으로 동작하고 퍼포먼스가 떨어지지 않도록 유지보수",
+      <span className={styles["span-t4"]}>
+        ⦁ 손쉽게 재사용 가능한 UI 컴포넌트를 제공.
+      </span>,
+      <br />,
+      <span className={styles["span-t4"]}>
+        ⦁ 신규 컴포넌트 개발과 여러 프로젝트에서 유기적으로 동작하고 퍼포먼스가
+        떨어지지 않도록 유지보수.
+      </span>,
     ],
   },
 ];
@@ -224,24 +318,24 @@ const projects_redmobile: Project[] = [
     projectName: "웹기반 게임 운영툴 개발",
     stacks: ["React", "Javascript", "Bootstrap", "Node.js"],
     detail: [
-      "Frontend",
+      <b>Frontend</b>,
       <br />,
-      "- 운영자가 캐릭터를 조회하고 커스터마이징 할 수 있는 웹기반 툴 개발",
+      "⦁ 운영자가 캐릭터를 조회하고 커스터마이징 할 수 있는 웹기반 툴 개발",
       <br />,
-      "- 서버 상태를 모니터링 할 수 있는 웹 대시보드 개발",
+      "⦁ 서버 상태를 모니터링 할 수 있는 웹 대시보드 개발",
       <br />,
-      "  - 모니터링용 서버와 소켓으로 실시간 정보를 받아와 UI로 표현",
+      "  ◦ 모니터링용 서버와 소켓으로 실시간 정보를 받아와 UI로 표현",
       <br />,
       <br />,
-      "Backend",
+      <b>Backend</b>,
       <br />,
-      "- Node.js를 사용하여 Frontend에 필요한 데이터를 게임서버로부터 받아와서 가공하는 중간서버를 개발",
+      "⦁ Node.js를 사용하여 Frontend에 필요한 데이터를 게임서버로부터 받아와서 가공하는 중간서버를 개발",
       <br />,
-      "- Frontend를 위한 API 개발",
+      "⦁ Frontend를 위한 API 개발",
       <br />,
-      "- Frontend <-> Node.js(중간서버) <-> 게임서버",
+      "⦁ Frontend <-> Node.js(중간서버) <-> 게임서버",
       <br />,
-      "- 각 서비스는 소켓으로 연결하여 통신함",
+      "⦁ 각 서비스는 소켓으로 연결하여 통신함",
       <br />,
     ],
   },

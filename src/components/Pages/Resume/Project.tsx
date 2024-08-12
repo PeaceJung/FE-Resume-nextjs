@@ -57,6 +57,7 @@ const projects_nhn: Project[] = [
     stacks: ["Vue2", "Typescript"],
     detail: [
       "쇼핑몰을 관리할 수 있는 어드민 개발 및 유지보수",
+      <br />,
       "서비스 플랜 별로 어드민이 있어서 기능 구현 및 유지보수를 위해 각 프로젝트 별로 중복된 작업을 필요로 함",
     ],
   },
@@ -214,6 +215,38 @@ const projects_douzone: Project[] = [
   },
 ];
 
+const projects_redmobile: Project[] = [
+  {
+    key: "gm tool",
+    term: "2018.10 ~ 2018.12",
+    people: "개발 1명",
+    company: "레드모바일",
+    projectName: "웹기반 게임 운영툴 개발",
+    stacks: ["React", "Javascript", "Bootstrap", "Node.js"],
+    detail: [
+      "Frontend",
+      <br />,
+      "- 운영자가 캐릭터를 조회하고 커스터마이징 할 수 있는 웹기반 툴 개발",
+      <br />,
+      "- 서버 상태를 모니터링 할 수 있는 웹 대시보드 개발",
+      <br />,
+      "  - 모니터링용 서버와 소켓으로 실시간 정보를 받아와 UI로 표현",
+      <br />,
+      <br />,
+      "Backend",
+      <br />,
+      "- Node.js를 사용하여 Frontend에 필요한 데이터를 게임서버로부터 받아와서 가공하는 중간서버를 개발",
+      <br />,
+      "- Frontend를 위한 API 개발",
+      <br />,
+      "- Frontend <-> Node.js(중간서버) <-> 게임서버",
+      <br />,
+      "- 각 서비스는 소켓으로 연결하여 통신함",
+      <br />,
+    ],
+  },
+];
+
 const ProjectDetail = ({ project }: { project: Project }) => (
   <div key={project.key} className="row pb-3 mb-3">
     <div className="col-3 fw-bold">
@@ -236,7 +269,9 @@ const ProjectDetail = ({ project }: { project: Project }) => (
           </span>
         ))}
       </div>
-      <p className="fs-6">{project.detail}</p>
+      <p className="fs-6" style={{ whiteSpace: "pre-wrap" }}>
+        {project.detail}
+      </p>
 
       {/* {project.image && (
         <img src={project.image} className="img-fluid" alt="이미지" />
@@ -264,6 +299,13 @@ const Project = () => {
           <div>
             <h3 className="text-uppercase">더존비즈온</h3>
             {projects_douzone.map((project) => (
+              <ProjectDetail project={project} key={project.key} />
+            ))}
+          </div>
+
+          <div>
+            <h3 className="text-uppercase">레드모바일</h3>
+            {projects_redmobile.map((project) => (
               <ProjectDetail project={project} key={project.key} />
             ))}
           </div>

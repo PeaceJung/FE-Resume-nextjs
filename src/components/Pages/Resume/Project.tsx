@@ -22,7 +22,7 @@ const projects_nhn: Project[] = [
     projectName: "쇼핑몰 어드민 통합 프로젝트 (Lead Developer)",
     stacks: [
       "React",
-      "Typescript",
+      "TypeScript",
       "Nx",
       "Webpack Module Federation",
       "PostCSS",
@@ -72,7 +72,7 @@ const projects_nhn: Project[] = [
     people: "개발 2~7명",
     company: "NHN 커머스",
     projectName: "샵바이 어드민",
-    stacks: ["Vue2", "Typescript"],
+    stacks: ["Vue2", "TypeScript"],
     detail: [
       <b>업무 내용</b>,
       <br />,
@@ -90,7 +90,7 @@ const projects_douzone: Project[] = [
     people: "개발 2~3명",
     company: "더존비즈온",
     projectName: "WE Studio : 라이브 스트리밍 서비스 개발",
-    stacks: ["React", "Typescript", "Next.js", "Node.js", "Graphql", "AWS"],
+    stacks: ["React", "TypeScript", "Next.js", "Node.js", "Graphql", "AWS"],
     detail: [
       <b>업무 내용</b>,
       <br />,
@@ -149,7 +149,7 @@ const projects_douzone: Project[] = [
     people: "개발 1명",
     company: "더존비즈온",
     projectName: "WEHAGO 전자결재 모바일 앱 개발",
-    stacks: ["React Native", "Expo", "Typescript", "Redux", "iOS", "Android"],
+    stacks: ["React Native", "Expo", "TypeScript", "Redux", "iOS", "Android"],
     detail: [
       <b>업무 내용</b>,
       <br />,
